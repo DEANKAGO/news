@@ -2,7 +2,7 @@
 
 ##### By Martin Kago
 
-### news link :
+### news link : http://44.200.116.238:3010/
 
 ## Table of Content
 

@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block main %}
+<p>{{ sources_str }}</p>
+{% for item in list_of_articles %}
+<div class="container">
+  <img src="{{ item.urlToImage }}" alt="{{ item.title}}" />
+  <p>author: {{ item.author }}</p>
+  <p>description: {{ item.description }}</p>
+  <p>
+    <a class="btn btn-primary" href="{{ item.url}}" target="_blank"
+      >Click To View Article
+    </a>
+  </p>
+  <p>Published On: {{ item.publishedAt}}</p>
+  <hr />
+</div>
+{% endfor %} {% endblock main %}
